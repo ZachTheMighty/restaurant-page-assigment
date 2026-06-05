@@ -1,2 +1,6 @@
 import "./index.css";
-console.log("bissdfdtcsdh");
+import { populateDom } from "../home/home.js";
+
+export const content = document.querySelector("#content");
+
+populateDom();

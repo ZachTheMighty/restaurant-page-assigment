@@ -19,20 +19,25 @@ body {
   margin: 0;
   padding: 0;
   background-color: #b497d6;
+  display: grid;
+  grid-template-rows: 10% 90%;
 }
 
-header {
+header:has(nav) {
   background-color: #05204a;
   padding: 24px;
+  display: flex;
 }
 
 nav {
+  flex: 1;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 button {
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: inherit;
   color: white;
   border: 0;
@@ -40,4 +45,18 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+
+#content {
+  background-color: #2f4858;
+  color: white;
+  width: 50%;
+  margin: 50px auto;
+  padding-top: 12px;
+  text-align: center;
+}
+
+#content header {
+  font-size: 2rem;
+  font-weight: 600;
 }
