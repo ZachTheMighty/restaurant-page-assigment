@@ -1,6 +1,7 @@
 import "./index.css";
-import { populateDom } from "../home/home.js";
+import { populateHome } from "../home/home.js";
+import { populateMenu } from "../menu/menu.js";
 
 export const content = document.querySelector("#content");
 
-populateDom();
+populateMenu();

@@ -1,0 +1,9 @@
+.menu-item {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+
+.menu-item + .menu-item {
+  margin-top: 12px;
+}
